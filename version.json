@@ -1,0 +1,11 @@
+{
+  "version": "jm-fluxo-global-v32-cache-control",
+  "gestorVersion": "jm-fluxo-gestor-v32-cache-leaflet-hotfix",
+  "motoristaVersion": "jm-fluxo-operacional-v31-motorista-cloudinary-real-flow",
+  "description": "V32 corrige o gestor sem usar o nome de versão do motorista: jm.html/app.js/final-ux.js usam versão própria do gestor, selectOperationalCall/selectCallDossier ficam compatíveis com window e JM.app, mapa Leaflet recebe proteção de ciclo de vida, e o service worker aceita conscientemente as versões ativas do gestor V32 e motorista V31.",
+  "updatedAt": "2026-07-01T12:00:00Z",
+  "build": "V32-GESTOR-CACHE-LEAFLET-HOTFIX",
+  "base": "GuinchoJM-main(1).zip enviado no início desta conversa",
+  "candidateCompared": "GuinchoJM-v31-gestor-cache-leaflet-hotfix.zip",
+  "notes": "Escopo cirúrgico no gestor. motorista.html e scripts do motorista foram preservados. O service-worker foi alterado porque o cache é global e precisava parar de tratar o cache ativo como versão exclusiva do motorista. Páginas cliente/relatorio/superadmin continuam fora do escopo e não foram alteradas."
+}
